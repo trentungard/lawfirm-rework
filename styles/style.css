@@ -4,46 +4,87 @@ h1 {
 
 header {
   width: 100%;
+  background-image: url(/img/bwoffice.jpg);
+  background-size: 110% 150%;
+  overflow: hidden;
+  height: 350px;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+}
+
+header .header {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  background-image: url(img/bwoffice.jpg);
   background-size: 100% 130%;
   overflow: hidden;
   display: grid;
-  -ms-grid-rows: 30% 70%;
-      grid-template-rows: 30% 70%;
+  -ms-grid-rows: 24% 75%;
+      grid-template-rows: 24% 75%;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 300px;
-  background-color: #3d4359;
+  height: 100%;
+  background-color: rgba(2, 12, 58, 0.9);
   margin: 0;
 }
 
-header .nav-bar-container {
-  border-bottom: 2px rgba(223, 220, 229, 0.7) solid;
+header .header .nav-bar-container {
+  border-bottom: 2px rgba(105, 119, 170, 0.5) solid;
   width: 80%;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 1.3em;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-header .nav-bar-container li {
+header .header .nav-bar-container li {
   display: inline;
   margin: 0 3% 0 3%;
   padding: 1% 1% 1% 1%;
   border-radius: 5px;
 }
 
-header .nav-bar-container li a:link {
-  color: rgba(223, 220, 229, 0.7);
+header .header .nav-bar-container li a:link {
+  color: rgba(243, 243, 243, 0.8);
+  text-decoration: none;
 }
 
-header .nav-bar-container li a:visited {
-  color: rgba(223, 220, 229, 0.7);
+header .header .nav-bar-container li a:visited {
+  color: rgba(243, 243, 243, 0.8);
+  font-style: none;
 }
 
-header .nav-bar-container li a:hover {
-  color: rgba(223, 220, 229, 0.7);
+header .header .nav-bar-container li a:hover {
+  color: #6977aa;
+  font-size: 1.01em;
+}
+
+header .header .nav-part-1 {
+  color: #EFEFEF;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 1.8em;
+  margin-left: 20%;
+}
+
+header .header .nav-part-1 p {
+  margin-top: -4%;
+  color: rgba(243, 243, 243, 0.8);
+}
+
+header .header .nav-part-2 {
+  width: 300px;
+  height: 150px;
+  text-align: right;
+  margin-top: 60px;
+  margin-left: 25%;
 }
 
 .nav-bar {
@@ -53,33 +94,6 @@ header .nav-bar-container li a:hover {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-}
-
-.nav-part-1 {
-  height: inherit;
-  width: 90%;
-  margin-top: 5%;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.nav-part-2 {
-  height: inherit;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .nav a:link {

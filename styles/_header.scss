@@ -4,36 +4,72 @@ h1{
 
 header{
     width: 100%;
+    background-image: url(/img/bwoffice.jpg);
+    background-size: 110% 150%;
+    overflow: hidden;
+    height: 350px;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    .header{
+    width: 100%;
     display: grid;
-    background-image: url(img/bwoffice.jpg);
     background-size: 100% 130%;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 24% 75%;
     grid-template-columns: 1fr 1fr;
-    height: 300px;
-    background-color: $callahanGrey;
+    height: 100%;
+    background-color: $callahanBlueTransparent;
     margin: 0;
-    .nav-bar-container{
-        border-bottom: 2px $callahanWhiteTransparent solid;
-        width: 80%;
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        li{
-            display: inline;
-            margin: 0 3% 0 3%;
-            padding: 1% 1% 1% 1%;
-            border-radius: 5px;
-            a:link{
+        .nav-bar-container{
+            border-bottom: 2px $callahanBabyTransparent solid;
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 1.3em;
+            position: sticky;
+            li{
+                display: inline;
+                margin: 0 3% 0 3%;
+                padding: 1% 1% 1% 1%;
+                border-radius: 5px;
+                a:link{
+                    color: $callahanWhiteTransparent;
+                    text-decoration: none;
+                }
+                a:visited{
+                    color: $callahanWhiteTransparent;
+                    font-style: none;
+                }
+                a:hover{
+                    color: $callahanBaby;
+                    font-size: 1.01em;
+
+                }
+            }
+        }
+        .nav-part-1{
+            color: $callahanWhite;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 1.8em;
+            margin-left: 20%;
+            p{
+                margin-top: -4%;
                 color: $callahanWhiteTransparent;
             }
-            a:visited{
-                color: $callahanWhiteTransparent;
-            }
-            a:hover{
-                color: $callahanWhiteTransparent;
-            }
+        }
+        .nav-part-2{
+            width: 300px;
+            height: 150px;
+            text-align: right;
+            margin-top: 60px;
+            margin-left: 25%;
+            
         }
     }
 }
@@ -43,27 +79,6 @@ header{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-}
-
-.nav-part-1{
-    height: inherit;
-    width: 90%;
-    margin-top: 5%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.nav-part-2{
-    height: inherit;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 
 .nav a:link {
