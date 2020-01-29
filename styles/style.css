@@ -152,6 +152,142 @@ header .header .nav-part-2 {
       align-self: center;
 }
 
+.main-body {
+  margin-bottom: 0%;
+}
+
+.main-body .about-wrapper {
+  background-color: #6977aa;
+  margin: 1% 0% 0% 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  width: 90%;
+  font-size: 2em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-body .about-wrapper .about-body-wrapper {
+  background-color: #EFEFEF;
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 110%;
+}
+
+.main-body .about-wrapper .about-body-wrapper .about-body {
+  margin-top: 0%;
+  text-indent: 5%;
+  width: 90%;
+  padding-left: 2%;
+  border-left: 20px #020c3a solid;
+  color: rgba(10, 10, 10, 0.7);
+}
+
+.main-body .practice-wrapper {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em;
+  background-color: #070a2b;
+  color: #6977aa;
+  height: 500px;
+  margin: 0 0 0 0;
+  padding: 5% 5% 5% 5%;
+}
+
+.main-body .practice-wrapper .practice-head {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  margin-left: 5%;
+  color: #EFEFEF;
+  display: inline;
+}
+
+.main-body .practice-wrapper .practice-head h2 {
+  display: inline;
+}
+
+.main-body .practice-wrapper .practice-head img {
+  display: inline;
+}
+
+.main-body .practice-wrapper .practice-emblems {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  position: relative;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.main-body .practice-wrapper .practice-list {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  font-family: 'Sulpher Point', sans-serif;
+  text-decoration: none;
+  margin-left: 5%;
+}
+
+.main-body .practice-wrapper .practice-list ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+.main-body .practice-wrapper .practice-list ul li {
+  list-style: none;
+  text-align: left;
+  display: inline;
+  padding: 0 25px 0 25px;
+}
+
+.main-body .practice-wrapper .practiice-list ul li:hover {
+  cursor: pointer;
+  -webkit-text-emphasis: underline;
+          text-emphasis: underline;
+  color: blue;
+}
+
+.main-body .practice-wrapper .practice-body {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-indent: 5%;
+}
+
+.main-body .practice-wrapper .practice-emblems img {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 150px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -169,156 +305,13 @@ p {
   font-size: 1em;
 }
 
-.main-body {
-  background-color: #efefef;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 0%;
-  width: 90%;
-  font-size: 1.25vw;
-  margin-top: 3%;
-}
-
-.bottom-borders {
-  border-bottom: 1px solid grey;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 2%;
-}
-
-/* ABOUT */
-.about-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  width: 100%;
-  font-size: 1.25vw;
-}
-
-.about-text {
-  height: 100%;
-  text-indent: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: -2%;
-  width: 90%;
-  color: rgba(10, 10, 10, 0.7);
-}
-
 /* PRACTICE*/
-.practice-wrapper {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 20% 20% 20% 20%;
-      grid-template-rows: 20% 20% 20% 20%;
-}
-
-.practice-emblems {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 2;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 5;
-  position: relative;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 66.75%;
-  text-align: center;
-}
-
-.practice-list {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 6;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  grid-row-end: 3;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  position: relative;
-  width: 50%;
-  font-size: 1.5vw;
-  text-align: center;
-  font-family: 'Sulpher Point', sans-serif;
-}
-
-.practiice-list ul li:hover {
-  cursor: pointer;
-  -webkit-text-emphasis: underline;
-          text-emphasis: underline;
-  color: blue;
-}
-
-.practice-list ul li {
-  display: inline-block;
-}
-
-.practice-list-2 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 6;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
-  grid-row-end: 4;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
-  width: 50%;
-  margin-left: 0%;
-  font-size: 1.2vw;
-  font-family: 'Sulpher Point', sans-serif;
-}
-
-.practice-list-2 ul {
-  margin-left: 0;
-}
-
-.practice-list-2 ul li {
-  display: inline-block;
-}
-
-.practice-text li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-.practice-areas {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 6;
-}
-
-.practice-more {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 6;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-indent: 5%;
-  color: rgba(10, 10, 10, 0.7);
-}
-
-.practice-emblems img {
-  width: 6vw;
-  height: 6vw;
-  border-radius: 150px;
-}
-
 /*TEAM*/
+.team {
+  background-color: #070a2b;
+}
+
 .team-top-1 {
-  margin-top: 2%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#001842), to(midnightblue));
-  background-image: linear-gradient(to bottom right, #001842, midnightblue);
   color: white;
   display: -ms-grid;
   display: grid;
@@ -365,8 +358,6 @@ p {
 }
 
 .team-top-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#001842), to(midnightblue));
-  background-image: linear-gradient(to bottom right, #001842, midnightblue);
   height: 15vw;
   width: 100%;
   border-radius: 15px;

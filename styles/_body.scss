@@ -1,0 +1,123 @@
+.main-body{
+    margin-bottom: 0%;
+    .about-wrapper{
+        background-color: $callahanBaby;
+        margin: 1% 0% 0% 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        width: 90%;
+        font-size: 2em;
+        font-family: 'Josefin Sans', sans-serif;
+        .about-body-wrapper{
+            background-color: $callahanWhite;
+            margin-left: 5%;
+            margin-top: 5%;
+            height: 110%;
+            .about-body{
+                margin-top: 0%;
+                text-indent: 5%;
+                width: 90%;
+                padding-left: 2%;
+                border-left: 20px $callahanBlue solid;
+                color: rgba(10, 10, 10, 0.7);
+            }
+        }
+    }
+    .practice-wrapper{
+        display: inline-grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.25em;
+        background-color: $callahanBlack;
+        color: $callahanBaby;
+        height: 500px;
+        margin: 0 0 0 0;
+        padding: 5% 5% 5% 5%;
+
+        .practice-head{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            margin-left: 5%;
+            color: $callahanWhite;
+            
+            display: inline;
+            h2{
+                display: inline;
+            }
+            img{
+                display: inline;
+                
+            }
+        }
+
+        .practice-emblems{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            position: relative;
+            justify-self: left;
+            text-align: center;
+            margin-top: 3%;
+        
+
+        }
+        
+        .practice-list{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+            font-family: 'Sulpher Point', sans-serif;
+            text-decoration: none;
+            margin-left: 5%;
+            
+            ul{
+                padding-left: 0;
+                text-align: center;
+            }
+    
+        }
+
+
+        .practice-list ul li{
+            list-style: none;
+            text-align: left;
+            display: inline;
+            padding: 0 25px 0 25px;
+
+        }
+        
+        .practiice-list ul li:hover{
+            cursor: pointer;
+            text-emphasis: underline;
+            color: blue;
+        }
+        
+        .practice-body{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 2%;
+            padding-right: 2%;
+            text-indent: 5%;
+        }
+        
+        .practice-emblems img{
+            width: 6vw;
+            height: 6vw;
+            border-radius: 150px;
+        }
+    }
+    
+    
+}
+
