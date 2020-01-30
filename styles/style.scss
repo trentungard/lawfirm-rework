@@ -26,63 +26,6 @@ p{
 
 /*TEAM*/
 
-.team{
-    background-color: $callahanBlack;
-}
-
-.team-top-1{
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    justify-items: center;
-    height: 18vw;
-    border-radius: 10px;
-}
-
-.team-image{
-    display: inline-block;
-    border-radius: 80px;
-}
-
-.team-text-1{
-    margin-top: -1.5%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-}
-
-.team-names-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 80%;
-    justify-items: center;
-    text-align: center;
-    font-size: 2vw;
-}
-
-.team-abouts{
-    text-align: left;
-    margin: 3%;
-    text-indent: 5%;
-    font-size: 1.25vw;
-    color: rgba(10, 10, 10, 0.7);
-}
-
-.team-top-2{
-    height: 15vw;
-    width: 100%;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1;
-    justify-content: center;
-}
-
-.team-names-2{
-    text-align: center;
-    font-size: 2vw;
-}
-
 /* CONTACT */
 
 .contact-wrapper{

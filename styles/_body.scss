@@ -9,106 +9,89 @@
         width: 90%;
         font-size: 2em;
         font-family: 'Josefin Sans', sans-serif;
+        overflow: visible;
         .about-body-wrapper{
             background-color: $callahanWhite;
-            margin-left: 5%;
-            margin-top: 5%;
-            height: 110%;
+            margin-left: 3%;
+            margin-top: 3%;
+            width: 98%;
+            height: 93%;
+            border-left: 20px $callahanBlue solid;
+            border-top: 20px $callahanBlue solid;
             .about-body{
                 margin-top: 0%;
                 text-indent: 5%;
-                width: 90%;
+                width: 100%;
                 padding-left: 2%;
-                border-left: 20px $callahanBlue solid;
                 color: rgba(10, 10, 10, 0.7);
             }
         }
     }
     .practice-wrapper{
         display: inline-grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.25em;
         background-color: $callahanBlack;
-        color: $callahanBaby;
-        height: 500px;
-        margin: 0 0 0 0;
+        color: $callahanWhiteTransparent;
+        height: 600px;
+        margin: 0% 0 0 0;
         padding: 5% 5% 5% 5%;
+        z-index: -1;
+        position: relative;
 
         .practice-head{
+            border: 2px solid white;
             grid-row-start: 1;
             grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
             margin-left: 5%;
-            color: $callahanWhite;
-            
-            display: inline;
-            h2{
-                display: inline;
             }
-            img{
-                display: inline;
-                
-            }
-        }
-
-        .practice-emblems{
-            grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 4;
-            grid-column-end: 6;
-            position: relative;
-            justify-self: left;
-            text-align: center;
-            margin-top: 3%;
-        
 
         }
         
         .practice-list{
-            grid-column-start: 1;
-            grid-column-end: 6;
-            grid-row-start: 3;
-            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
             position: relative;
-            font-family: 'Sulpher Point', sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
             text-decoration: none;
-            margin-left: 5%;
+            margin-left: 25%;
             
-            ul{
-                padding-left: 0;
-                text-align: center;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-left: 10px;
+                }
+                
+                ul{
+                    padding-left: 0;
+                    text-align: center;
+                    li{
+                        list-style: square;
+                        text-align: left;
+                        padding: 0px 0 20px 0;
+                        font-size: 1.2em;
+                        color: $callahanWhiteTransparent;
+                    }
+                }
             }
-    
-        }
-
-
-        .practice-list ul li{
-            list-style: none;
-            text-align: left;
-            display: inline;
-            padding: 0 25px 0 25px;
-
-        }
-        
-        .practiice-list ul li:hover{
-            cursor: pointer;
-            text-emphasis: underline;
-            color: blue;
-        }
         
         .practice-body{
             grid-column-start: 1;
-            grid-column-end: 6;
-            grid-row-start: 5;
-            grid-row-end: 6;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
             margin-left: 5%;
             margin-right: 5%;
             padding-left: 2%;
             padding-right: 2%;
             text-indent: 5%;
+            font-size: 1.5em;
         }
         
         .practice-emblems img{
@@ -116,8 +99,138 @@
             height: 6vw;
             border-radius: 150px;
         }
+    .team{
+        height: auto;
+        background-color: $callahanBlue;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 80%;
+        font-family: 'Josefin Sans', sans-serif;
+        .team-head{
+            border: inherit;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            font-size: 1.7em;
+            text-align: center;
+            color: $callahanWhite;
+        }
+        .team-body{
+            height: auto;
+            border: inherit;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .team-card{
+                height: auto;
+                grid-column: span 2;
+                background-color: $callahanWhite;
+                margin: 2% 2% 2% 2%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 100px 200px 50px;
+                border-left: 15px $callahanBaby solid;
+                border-top: 15px $callahanBaby solid;
+                border-radius: 10px;
+                img{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 0px 10px 10px 10px;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+                h3{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    font-size: 2.2em;
+                    color: $callahanBlack;
+                    
+                }
+                h4{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    margin: 0 0 0 0;
+                    font-size: 2em;
+                    color: $logoBlue;
+                }
+                p{
+                    grid-column: span 3;
+                    margin-top: 4%;
+                    text-indent: 5%;
+                    line-height: 25px;
+                    padding: 0 3% 0 3%;
+                }
+                div{
+                    grid-column: span 3;
+                }
+                #more{
+                    margin-top: 0%;
+                    text-align: center;
+                    display: none;
+                    }
+                }
+            .team-card-middle{
+                height: auto;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                background-color: $callahanWhite;
+                margin: 2% 2% 2% 2%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 100px 200px 50px;
+                border-left: 15px $callahanBaby solid;
+                border-top: 15px $callahanBaby solid;
+                border-radius: 10px;
+                img{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 0px 10px 10px 10px;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+                h3{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    font-size: 2.2em;
+                    color: $callahanBlack;
+                    
+                }
+                h4{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    margin: 0 0 0 0;
+                    font-size: 2em;
+                    color: $logoBlue;
+                }
+                p{
+                    grid-column: span 3;
+                    margin-top: 4%;
+                    text-indent: 5%;
+                    line-height: 25px;
+                    padding: 0 3% 0 3%;
+                }
+                div{
+                    grid-column: span 3;
+                }
+                #more{
+                    margin-top: 0%;
+                    text-align: center;
+                    display: none;
+                    }
+            }
+        }
     }
-    
-    
 }
 
