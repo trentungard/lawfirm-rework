@@ -152,6 +152,10 @@ header .header .nav-part-2 {
       align-self: center;
 }
 
+* {
+  overflow-x: none;
+}
+
 .main-body {
   margin-bottom: 0%;
 }
@@ -263,6 +267,7 @@ header .header .nav-part-2 {
   padding-right: 2%;
   text-indent: 5%;
   font-size: 1.5em;
+  height: 500px;
 }
 
 .main-body .practice-emblems img {
@@ -316,8 +321,8 @@ header .header .nav-part-2 {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 100px 100px 200px 50px;
       grid-template-rows: 100px 100px 200px 50px;
-  border-left: 15px #6977aa solid;
-  border-top: 15px #6977aa solid;
+  border-left: 10px #6977aa solid;
+  border-top: 10px #6977aa solid;
   border-radius: 10px;
 }
 
@@ -334,17 +339,20 @@ header .header .nav-part-2 {
 }
 
 .main-body .team .team-body .team-card h3 {
+  height: 50px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  font-size: 2.2em;
+  font-size: 2em;
   color: #070a2b;
+  padding: 1% 1% 1% 1%;
 }
 
 .main-body .team .team-body .team-card h4 {
+  height: 50px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
@@ -368,10 +376,22 @@ header .header .nav-part-2 {
   grid-column: span 3;
 }
 
-.main-body .team .team-body .team-card #more {
-  margin-top: 0%;
+.main-body .team .team-body .team-card .contact-button {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: rgba(2, 12, 58, 0.9);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 20%;
   text-align: center;
-  display: none;
+  padding: 2% 1% 1% 1%;
+  margin: -4% 0 4% 0;
+  border-radius: 5px;
+}
+
+.main-body .team .team-body .team-card .contact-button a {
+  color: #EFEFEF;
 }
 
 .main-body .team .team-body .team-card-middle {
@@ -387,8 +407,8 @@ header .header .nav-part-2 {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 100px 100px 200px 50px;
       grid-template-rows: 100px 100px 200px 50px;
-  border-left: 15px #6977aa solid;
-  border-top: 15px #6977aa solid;
+  border-left: 10px #6977aa solid;
+  border-top: 10px #6977aa solid;
   border-radius: 10px;
 }
 
@@ -405,6 +425,7 @@ header .header .nav-part-2 {
 }
 
 .main-body .team .team-body .team-card-middle h3 {
+  height: 50px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
@@ -416,6 +437,7 @@ header .header .nav-part-2 {
 }
 
 .main-body .team .team-body .team-card-middle h4 {
+  height: 50px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
@@ -439,15 +461,113 @@ header .header .nav-part-2 {
   grid-column: span 3;
 }
 
-.main-body .team .team-body .team-card-middle #more {
-  margin-top: 0%;
+.main-body .team .team-body .team-card-middle .contact-button {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: rgba(2, 12, 58, 0.9);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 20%;
   text-align: center;
+  padding: 2% 1% 1% 1%;
+  margin: -4% 0 4% 0;
+  border-radius: 5px;
+}
+
+.main-body .team .team-body .team-card-middle .contact-button a {
+  color: #EFEFEF;
+}
+
+.main-body .contact-wrapper {
+  background-color: #EFEFEF;
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 30% 65% 5%;
+      grid-template-rows: 30% 65% 5%;
+  width: 100%;
+  justify-items: center;
+  height: 500px;
+  padding-bottom: 5%;
+}
+
+.main-body .contact-wrapper .contact-text {
+  border: inherit;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  color: #070a2b;
+  margin: 2% 6% 0 6%;
+  overflow: hidden;
+}
+
+.main-body .contact-wrapper .contact-text img {
+  height: 50px;
+  width: 50px;
+  margin-left: 8%;
+}
+
+.main-body .contact-wrapper .contact-info {
+  border: inherit;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0% 0% 0 10%;
+  padding: 3% 0 0 2%;
+}
+
+.main-body .contact-wrapper .contact-other {
+  border: inherit;
+  width: 100%;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0% 0 0 2%;
+  text-align: center;
+  margin: 0% 20% 0 5%;
+}
+
+.main-body .contact-wrapper .contact-consultation {
+  border: inherit;
+  height: 55px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  overflow: hidden;
+}
+
+.main-body .contact-wrapper .contact-consultation h3 {
+  padding-top: 0;
+  margin-top: 10px;
+}
+
+.main-body .contact-wrapper br {
   display: none;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -465,69 +585,6 @@ p {
 /* PRACTICE*/
 /*TEAM*/
 /* CONTACT */
-.contact-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  width: 90%;
-  margin-left: 5%;
-  justify-items: center;
-  height: 20vw;
-}
-
-.contact {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  width: 90%;
-  margin-left: 5%;
-  justify-items: center;
-  height: 200px;
-}
-
-.contact-head {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.contact-elements {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  margin-top: 0%;
-  padding-top: 0%;
-}
-
-.contact-elements a:link {
-  color: darkslategray;
-}
-
-.contact-elements a:hover {
-  color: darkblue;
-}
-
-.contact-elements a:active {
-  color: #124559;
-}
-
-.contact-consultation {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 2;
-  margin-left: 12%;
-  margin-bottom: 5%;
-  border-bottom: #001842 2px solid;
-  border-top: #124559 2px solid;
-  margin-top: 7%;
-  text-align: center;
-}
-
 /*TESTIMONIALS*/
 .testimonials {
   padding-bottom: 2%;
@@ -689,88 +746,6 @@ footer {
     text-indent: 5%;
     font-size: 2.25vw;
   }
-  .contact-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    width: 90%;
-    margin-left: 5%;
-    justify-items: center;
-    height: 60vw;
-    padding-bottom: 5%;
-  }
-  .contact-wrapper br {
-    display: none;
-  }
-  .contact {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    width: 90%;
-    margin-left: 0%;
-    justify-items: center;
-  }
-  .contact-head {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  .email {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .phone {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 4;
-    -ms-grid-column-align: left;
-        justify-self: left;
-  }
-  .address {
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 5;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 3;
-    font-size: 2.2vw;
-  }
-  .contact-elements {
-    text-align: left;
-  }
-  .contact-elements a:link {
-    color: darkslategray;
-  }
-  .contact-elements a:hover {
-    color: darkblue;
-  }
-  .contact-elements a:active {
-    color: #124559;
-  }
-  .contact-consultation {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 3;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
-    border-bottom: #001842 2px solid;
-    border-top: #124559 2px solid;
-    margin-top: 7%;
-    text-align: center;
-    font-size: 2vw;
-  }
   .footer-container p {
     margin: 3%;
   }
@@ -785,9 +760,6 @@ footer {
   }
   .footer-container a:hover {
     color: grey;
-  }
-  .bottom-borders {
-    display: none;
   }
   footer {
     text-align: center;

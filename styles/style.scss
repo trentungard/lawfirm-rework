@@ -4,6 +4,7 @@
 
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h2{
@@ -27,60 +28,6 @@ p{
 /*TEAM*/
 
 /* CONTACT */
-
-.contact-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 90%;
-    margin-left: 5%;
-    justify-items: center;
-    height: 20vw;
-}
-
-.contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 90%;
-    margin-left: 5%;
-    justify-items: center;
-    height: 200px;
-}
-
-.contact-head{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.contact-elements{
-    grid-row-start: 2;
-    margin-top: 0%;
-    padding-top: 0%;
-}
-
-.contact-elements a:link{
-    color: darkslategray;
-}
-
-.contact-elements a:hover{
-    color: darkblue;
-}
-
-.contact-elements a:active{
-    color: #124559;
-}
-
-.contact-consultation{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    margin-left: 12%;
-    margin-bottom: 5%;
-    border-bottom: #001842 2px solid;
-    border-top: #124559 2px solid;
-    margin-top: 7%;
-    text-align: center;
-}
 
 /*TESTIMONIALS*/
 
@@ -260,86 +207,6 @@ footer{
         font-size: 2.25vw;
     }
 
-    .contact-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 90%;
-        margin-left: 5%;
-        justify-items: center;
-        height: 60vw;
-        padding-bottom: 5%;
-    }
-
-    .contact-wrapper br{
-        display: none;
-    }
-
-    .contact{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        width: 90%;
-        margin-left: 0%;
-        justify-items: center;
-        
-    }
-    
-    .contact-head{
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-
-    .email{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    
-    .phone{
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        justify-self: left;
-    }
-
-    .address{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 2.2vw;
-    }
-
-    
-    .contact-elements{
-        text-align: left;
-    }
-    
-    .contact-elements a:link{
-        color: darkslategray;
-    }
-    
-    .contact-elements a:hover{
-        color: darkblue;
-    }
-    
-    .contact-elements a:active{
-        color: #124559;
-    }
-    
-    .contact-consultation{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        border-bottom: #001842 2px solid;
-        border-top: #124559 2px solid;
-        margin-top: 7%;
-        text-align: center;
-        font-size: 2vw;
-    }
     
     .footer-container p{ 
         margin: 3%;
@@ -359,10 +226,6 @@ footer{
     
     .footer-container a:hover{
         color: grey;
-    }
-    
-    .bottom-borders{
-        display: none;
     }
 
     footer{
